@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Aumenta a largura máxima para tablets */
+    background-color: #80deea;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #0ef3f3;
+    padding: 20px; /* Aumenta o padding para tablets */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px; /* Aumenta o tamanho da fonte para tablets */
+    font-weight: 500;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px; /* Aumenta o tamanho da fonte para tablets */
+}
+
+.title-bar {
+    padding: 20px; /* Aumenta o padding para tablets */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title-bar h2 {
+    margin: 0;
+    font-size: 22px; /* Aumenta o tamanho da fonte para tablets */
+    text-align: center;
+    flex-grow: 1;
+}
+
+.title-bar .back-button {
+    position: absolute;
+    left: 20px; /* Ajusta a posição para tablets */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Aumenta a margem para tablets */
+}
+
+.search-bar input {
+    width: 70%; /* Aumenta a largura da caixa de texto para tablets */
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px; /* Aumenta o tamanho da fonte para tablets */
+    height: 40px; /* Ajuste para o mesmo tamanho do botão */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+.search-bar button {
+    padding: 0;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    height: 40px; /* Ajuste para o mesmo tamanho da caixa de texto */
+    width: 40px; /* Ajuste para manter a proporção */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+}
+
+.patient-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient-list li {
+    background-color: #ffffff;
+    margin: 10px 20px;
+    padding: 15px; /* Aumenta o padding para tablets */
+    border-radius: 5px;
+    text-align: left;
+    font-size: 18px; /* Aumenta o tamanho da fonte para tablets */
+}
+
+@media (min-width: 768px) {
+    /* Estilos adicionais para tablets */
+    .container {
+        max-width: 700px; /* Aumenta ainda mais a largura máxima para tablets maiores */
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .back-button {
+        font-size: 20px;
+    }
+    
+    .title-bar h2 {
+        font-size: 24px;
+    }
+    
+    .search-bar input {
+        font-size: 18px;
+    }
+    
+    .patient-list li {
+        font-size: 20px;
+    }
+}
